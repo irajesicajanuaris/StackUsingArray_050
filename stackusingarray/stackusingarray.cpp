@@ -5,7 +5,7 @@ using namespace std;
 
 class Program {
 private:
-	string stack_array [5];
+	string stack_array[5];
 	int top;
 
 public:
@@ -41,4 +41,16 @@ public:
 	bool empty() {
 		return (top == -1);
 	}
+
+	void display() {
+		if (empty()) {
+			cout << "\nStack is empty." << endl;
+		}
+		else {
+			for (int tmp = top; tmp = 0; tmp--) {
+				cout << stack_array[tmp] << endl;
+			}
+		}
+	}
+};
 
